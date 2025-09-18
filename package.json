@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-shadow-styles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vite plugin providing utilities to inject styles into a shadow root.",
   "license": "MIT",
   "type": "module",
@@ -8,6 +8,9 @@
     ".": {
       "import": "./dist/shadowStylesPlugin.js",
       "types": "./dist/shadowStylesPlugin.d.ts"
+    },
+    "./virtual": {
+      "types": "./dist/virtual.d.ts"
     }
   },
   "files": [

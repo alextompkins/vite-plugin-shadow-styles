@@ -19,6 +19,12 @@ export default defineConfig(async ({ command, mode }) => ({
 }));
 ```
 
+If using Typescript, you'll also need to include the virtual module types. Make a file called `shadow-styles.d.ts` and include the following:
+
+```ts
+/// <reference types="vite-plugin-shadow-styles/virtual" />
+```
+
 ---
 
 Then, choose one of these methods:
