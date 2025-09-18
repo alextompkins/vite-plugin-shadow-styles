@@ -1,28 +1,35 @@
 {
   "name": "vite-plugin-shadow-styles",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A Vite plugin providing utilities to inject styles into a shadow root.",
+  "license": "MIT",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/shadowStylesPlugin.js",
+      "types": "./dist/shadowStylesPlugin.d.ts"
     }
   },
+  "files": [
+    "./dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && bash ./scripts/append-virtual-types.sh",
     "check": "npm run types:check && npm run lint",
     "lint": "eslint . && prettier --config ./.prettierrc.json --ignore-unknown --check \"**/*\"",
     "lint:fix": "eslint . --fix && prettier --config ./.prettierrc.json --ignore-unknown --write \"**/*\"",
     "types:check": "tsc --noEmit"
   },
-  "dependencies": {},
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@types/node": "^24.5.2",
     "eslint": "^9.35.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-import-resolver-typescript": "^4.4.4",
     "globals": "^16.4.0",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2",

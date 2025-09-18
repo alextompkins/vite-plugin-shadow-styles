@@ -28,6 +28,9 @@ export default tseslint.config([
     rules: {
       '@typescript-eslint/consistent-type-imports': 'error',
 
+      // Ignore virtual modules when resolving
+      'import/no-unresolved': ['error', { ignore: ['virtual:.*'] }],
+
       // Import sorting
       'import/order': 'off', // must be off for simple-import-sort to work
       'simple-import-sort/exports': 'error',

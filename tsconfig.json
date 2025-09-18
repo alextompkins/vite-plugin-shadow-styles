@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+
+    /* Output options */
     "target": "ES2022",
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "outDir": "dist",
-    "declaration": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -19,7 +22,12 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+
+    /* Misc */
+    "types": ["vite/client"]
   },
   "include": ["**/*"]
 }
