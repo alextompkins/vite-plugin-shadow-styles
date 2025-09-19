@@ -3,6 +3,10 @@
   "version": "0.0.2",
   "description": "A Vite plugin providing utilities to inject styles into a shadow root.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alextompkins/vite-plugin-shadow-styles.git"
+  },
   "type": "module",
   "exports": {
     ".": {
