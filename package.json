@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-shadow-styles",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Vite plugin providing utilities to inject styles into a shadow root.",
   "license": "MIT",
   "repository": {
